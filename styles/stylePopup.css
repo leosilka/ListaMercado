@@ -1,0 +1,38 @@
+/* Estilos para o pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1.25em;
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Estilos para a mensagem dentro do pop-up */
+#mensagem {
+    font-size: 18px;
+    font-weight: bold;
+    /* margin-right: 10px; */
+    display: inline-block;
+}
+
+#imagemProdutoGravado {
+    width: 3.125em;
+    height: auto;
+}
+
+/* Estilos para o botão de fechar o pop-up (opcional) */
+#fechar {
+    position: absolute;
+    top: 0.625em;
+    right: 0.625em;
+    cursor: pointer;
+}

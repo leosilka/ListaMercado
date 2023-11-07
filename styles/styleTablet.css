@@ -1,0 +1,102 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .cabecalho {
+        height: 9.375em;
+        font-size: 25px;
+    }
+
+    .lblProduto,
+    .quantidadeProduto,
+    .valorProduto {
+        font-size: 30px;
+    }
+
+    .nomeProduto,
+    #valorProduto {
+        font-size: 20px;
+    }
+
+    .botaoGravar {
+        font-weight: 100;
+        font-size: 30px;
+    }
+
+    .botaoRemover,
+    .botaoEditar {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    #valorQuantidade {
+        font-size: 30px;
+    }
+
+    input[type=range] {
+        width: 60%;
+    }
+    
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 60%;
+        height: 1.25em;
+        box-shadow: 5px 5px 10px #000000;
+        border: 0.188em solid #000000;
+    }
+    
+    input[type=range]::-webkit-slider-thumb {
+        height: 1.875em;
+        width: 1.25em;
+        margin-top: -0.563em;
+    }
+    
+    input[type=range]::-moz-range-track {
+        width: 60%;
+        height: 1.875em;
+    }
+    
+    input[type=range]::-moz-range-thumb {
+        height: 1.875em;
+        width: 1.25em;
+    }
+
+    input[type=range]::-ms-track {
+        width: 60%;
+        height: 1.875em;
+    }
+
+    input[type=range]::-ms-thumb {
+        box-shadow: 0px 0px 1px #000000;
+        border: 3px solid #000000;
+        height: 1.875em;
+        width: 1.25em;
+    }
+
+    .listaTitulo {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    #listaCompras h3 {
+        font-size: 25px;
+    }
+
+    #listaCompras,
+    #listaCompras p {
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    #mensagem {
+        font-size: 30px;
+    }
+
+    #imagemProdutoGravado {
+        width: 6.25em;
+        height: auto;
+    }
+
+}

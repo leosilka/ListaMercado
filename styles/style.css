@@ -1,0 +1,176 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+@import url('styleInputRange.css');
+@import url('stylePopup.css');
+@import url('styleTablet.css');
+
+:root {
+    --fonte-principal: 'Teko';
+    --cor-principal: #bea9e3;
+    --cor-fundo: #c8d4ee;
+    --cor-rodape: #f1b084;
+    --cor-texto: #788fc6;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3.125em;
+    color: var(--cor-texto);
+    background-image: url('/img/endless-constellation.svg');
+}
+
+
+.formulario {
+    margin: 1.875em 0.938em;
+    border: 0.625em double var(--cor-principal);
+    border-radius: 0.313em;
+    padding: 1.875em 0;
+}
+
+.listaTitulo {
+    text-align: center;
+}
+
+#listaCompras {
+    margin: 1.875em 0.938em;
+    border: 0.625em double var(--cor-principal);
+    border-radius: 0.313em;
+    padding: 1.875em 0;
+}
+
+#listaCompras h3,
+#valorTotal {
+    text-align: center;
+}
+
+.itemLista {
+    padding: 0.5em;
+}
+
+.formsNomeProduto,
+.formsQuantidadeProduto,
+.formsValorProduto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.875em;
+}
+
+.formsBotao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lblProduto,
+.quantidadeProduto,
+.valorProduto {
+    font-size: 20px;
+}
+
+.nomeProduto,
+#valorProduto,
+#novoValor,
+#novaQuantidade {
+    padding: 0.188em;
+    font-size: 15px;
+    border-width: 0.188em;
+    border-color: var(--cor-principal);
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: double;
+    border-radius: 3.125em;
+    box-shadow: 0em 0em 0.625em var(--cor-fundo);
+    text-shadow: 0em 0em 0.5em var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    text-align: center;
+}
+.nomeProduto,
+#valorProduto:focus,
+#novoValor:focus {
+    outline:none;
+}
+
+.botaoGravar {
+    font-family: var(--fonte-principal);
+    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 0.313em 0.313em;
+    border: solid #0066cc 0.125em;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 1.188em;
+    transition : 555ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.botaoGravar:hover {
+    transition : 555ms;
+    padding: 0.625em 0.938em;
+    transform : translateY(-4px);
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 0.125em #0066cc;
+}
+
+.imagemBotao {
+    width: 1.563em;
+    margin-left: 0.188em;
+    margin-right: 0.188em;
+    flex-direction: row;
+}
+
+.botaoRemover,
+.botaoEditar {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 11px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 4px 6px;
+    border: solid #0066cc 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 477ms;
+    transform: translateY(0);
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0.5em;
+}
+    
+.botaoRemover:hover,
+.botaoEditar:hover { 
+    transition : 477ms;
+    padding: 10px 13px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-rodape);
+}

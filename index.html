@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/styleTablet.css">
+    <link rel="stylesheet" href="/styles/stylePopupEdicao.css">
+    <title>Lista de Mercado</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Lista de Mercado</h1>
+    </header>
+    <form class="formulario" id="formulario">
+        <div class="formsNomeProduto">
+            <label for="nomeProduto" class="lblProduto">Produto</label>
+            <input type="text" name="nomeProduto" id="nomeProduto" class="nomeProduto">
+        </div>
+        <div class="formsQuantidadeProduto">
+            <label for="quantidadeProduto" class="quantidadeProduto">Quantidade do Produto</label>
+            <input type="range" name="quantidadeProduto" id="quantidadeProduto" class="rangeQuantidadeProduto" min="1" max="99" oninput="mostrarValor(this.value)">
+            <span id="valorQuantidade">0</span>
+        </div>
+        <div class="formsValorProduto">
+            <label for="valorProduto" class="valorProduto">Valor do Produto</label>
+            <input type="text" name="valorProduto" id="valorProduto" placeholder="0,00" onkeyup="formatarMoeda(this)">
+        </div>
+        <div class="formsBotao">
+            <button class="botaoGravar" id="botaoGravar">
+                Gravar Produto<img class="imagemBotao" src="https://www.htmlcssbuttongenerator.com/iconExample-cube-filled.svg"/>
+            </button>
+            <div id="popup" class="popup">
+                <span id="mensagem">Produto Gravado</span>
+                <img id="imagemProdutoGravado" src="/img/double-check.gif" alt="imagem de confirmacao de produto gravado">
+            </div>
+
+            <!-- NOVA IMPLEMENTACÃO!!! -->
+            <div id="popupEdicao" class="popupEdicao">
+                <h3>Editar Item</h3>
+                <label for="novaQuantidade" class="novaQuantidade">Nova Quantidade</label>
+                <input type="text" name="novaQuantidade" id="novaQuantidade" placeholder="0">
+                <div class="formsNovoValor">
+                    <label for="novoValor" class="novoValor">Novo Valor</label>
+                    <input type="text" name="novoValor" id="novoValor" placeholder="0,00" onkeyup="formatarMoeda(this)">
+                </div>
+                <div class="formsBotao">
+                    <button class="botaoSalvar" id="botaoSalvar">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="listaTitulo">
+        <h3>Lista de Produtos</h3>
+        <p id="valorTotal"></p>
+    </div>
+    <div id="listaCompras">
+    </div>
+    <footer>Desenvolvido por Leonardo Silka&reg;</footer>
+    <script src="/scripts/formatMoeda.js"></script>
+    <script src="/scripts/mostrarValorQuantidade.js"></script>
+    <script src="/scripts/botaoGravar.js"></script>
+</body>
+</html>
