@@ -1,5 +1,5 @@
 .popupEdicao {
-    display: none;
+    display: flex;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -32,12 +32,3 @@
     text-transform: uppercase;
     margin: 0.5em;
 }
-
-/* .botaoSalvar:hover {
-    transition : 555ms;
-    padding: 0.625em 0.938em;
-    transform : translateY(-4px);
-    background-color: #fff;
-    color: #0066cc;
-    border: solid 0.125em #0066cc;
-} */

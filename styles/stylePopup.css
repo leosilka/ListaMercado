@@ -28,11 +28,3 @@
     width: 3.125em;
     height: auto;
 }
-
-/* Estilos para o botão de fechar o pop-up (opcional) */
-#fechar {
-    position: absolute;
-    top: 0.625em;
-    right: 0.625em;
-    cursor: pointer;
-}
