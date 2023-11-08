@@ -1,6 +1,10 @@
 # Lista de Mercado
 
+[Clique Aqui](https://listamercado-eight.vercel.app/) para verificar o webapp funcionando.
+
+
 [Consiste em o usuário criar uma lista de mercado.]
+
 
 #### O uso é simples, mas está sendo desenvolvido a parte para desktop.
 Foi feito a implementação do usuário digitar o nome do produto, escolher a quantidade, o valor, o sistema irá realizar a soma dos itens e dará o valor total, sempre que for inserido novos itens.
